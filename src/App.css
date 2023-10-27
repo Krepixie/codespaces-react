@@ -1,3 +1,16 @@
-body {
-  background-color: #c78b8b;
+:root {
+  --teal: #0fa3b1;
+  --blue: #b5e2fa;
+  --white: #f9f7f3;
+  --yellow: #eddea4;
+  --orange: #f7a072;
+  --shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.App,
+#root,
+body,
+html {
+  height: 100%;
+  width: 100%;
 }

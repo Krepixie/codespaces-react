@@ -1,11 +1,14 @@
-import './App.css';
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Teste</h1>
+      <Header />
+      <Home />
+      <Footer />
     </div>
   );
 }
-
-export default App;

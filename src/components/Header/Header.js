@@ -1,21 +1,22 @@
 import "./Header.css";
-import logo from '../../images/logo.png';
+import Menu from "../Menu/Menu";
+import Logotipo from "../Logotipo/Logotipo";
+import styled from "styled-components";
+
+const Cabecalho = styled.header`
+  background-color: var(--orange);
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
 
 export default function Header() {
   return (
-    <header id="header">
-      <div>
-        <img id="logo" src={logo} alt="logo"></img>
-      </div>
-      <ul id="menu-list">
-        <li className="menu-items">Início</li>
-        <li className="menu-items">Produtos</li>
-        <li className="menu-items">Contato</li>
-      </ul>
-      <div id="menu-buttons">
-        <button id="login">Entrar</button>
-        <button id="signup">Registrar-se</button>
-      </div>
-    </header>
+    <Cabecalho>
+      <Logotipo />
+      <Menu />
+    </Cabecalho>
   );
 }

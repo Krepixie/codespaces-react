@@ -1,12 +1,11 @@
-import "./Header.css";
 import Menu from "../Menu/Menu";
-import Logotipo from "../Logotipo/Logotipo";
+import Logo from "../Logo/Logo";
 import styled from "styled-components";
 
-const Cabecalho = styled.header`
+const HeaderStyle = styled.header`
   background-color: var(--orange);
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,9 +13,9 @@ const Cabecalho = styled.header`
 
 export default function Header() {
   return (
-    <Cabecalho>
-      <Logotipo />
+    <HeaderStyle>
+      <Logo />
       <Menu />
-    </Cabecalho>
+    </HeaderStyle>
   );
 }

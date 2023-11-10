@@ -1,16 +1,16 @@
-import logo from "../../images/logo.png";
+import logo from "../../images/logo.svg";
 import styled from "styled-components";
 
-const AppLogo = styled.div`
+const LogoStyle = styled.div`
   #logo {
     height: 5rem;
   }
 `;
 
-export default function Logotipo() {
+export default function Logo() {
   return (
-    <AppLogo>
+    <LogoStyle>
       <img id="logo" src={logo} alt="logo"></img>
-    </AppLogo>
+    </LogoStyle>
   );
 }

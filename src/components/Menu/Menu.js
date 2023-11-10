@@ -1,12 +1,9 @@
-import search from "../../images/search.svg";
 import login from "../../images/login.svg";
 import styled from "styled-components";
-import "./Menu.css";
 
 const listaMenu = ["Início", "Produtos", "Contato"];
-const listaImagens = [search, login];
 
-const MenuList = styled.ul`
+const MenuListStyle = styled.ul`
   display: flex;
   list-style-type: none;
   width: 30%;
@@ -17,7 +14,7 @@ const MenuList = styled.ul`
 
   .menu-items {
     color: var(--white);
-    font: 24px bold;
+    font: 20px bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.5s;
@@ -30,39 +27,41 @@ const MenuList = styled.ul`
   }
 `;
 
-const MenuButtons = styled.div`
+const MenuButtonsStyle = styled.div`
   display: flex;
   gap: 10px;
 
-  > button {
+  input {
+    background-image: url("../../images/search.svg");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+  }
+
+  button {
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
-    background-color: transparent;
     font: 18px bold;
     cursor: pointer;
   }
 
-  .menu-icons {
-    width: 1.5rem;
+  #login {
+    background-color: var(--white);
   }
 `;
 
 export default function Menu() {
   return (
     <>
-      <MenuList>
+      <MenuListStyle>
         {listaMenu.map((item) => (
           <li className="menu-items">{item}</li>
         ))}
-      </MenuList>
-      <MenuButtons>
-        {listaImagens.map((image) => (
-          <button>
-            <img src={image} alt="" className="menu-icons"></img>
-          </button>
-        ))}
-      </MenuButtons>
+      </MenuListStyle>
+      <MenuButtonsStyle>
+        <button id="login">Entrar</button>
+        <button id="signup">Crie sua conta</button>
+      </MenuButtonsStyle>
     </>
   );
 }

@@ -2,6 +2,8 @@ import Sidebar from "../Sidebar/Sidebar";
 import ProductCard from "../ProductCard/ProductCard";
 import Search from "../Search/Search";
 import styled from "styled-components";
+import { products } from "../Search/dados";
+
 
 const HomeStyle = styled.section`
   display: flex;
@@ -10,7 +12,6 @@ const HomeStyle = styled.section`
 
   #main {
     background-color: var(--blue);
-    height: 100%;
     width: 100%;
     padding: 10rem 5rem;
   }
@@ -23,9 +24,16 @@ const HomeStyle = styled.section`
 export default function Home() {
   return (
     <HomeStyle>
-      <Search />
+      <Sidebar>
+        <Search />
+      </Sidebar>
+
       <main id="main">
-        <ProductCard></ProductCard>
+        <ul>
+          {products.map((product) => (
+            <ProductCard></ProductCard>
+          ))}
+        </ul>
       </main>
     </HomeStyle>
   );

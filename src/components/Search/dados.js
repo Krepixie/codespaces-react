@@ -1,23 +1,25 @@
-import product_image from "../../images/dogfood.png"
+import food from "../../images/product-food.jpg"
+import collar from "../../images/product-collar.jpg"
+import shampoo from "../../images/product-shampoo.jpg"
 
 export const products = [
     {
         id: 1,
-        image: product_image,
+        image: food,
         name: 'Ração',
         description: 'lorem ipsum',
         price: '32,90'
     },
     {
         id: 2,
-        image: product_image,
+        image: collar,
         name: 'Coleira',
         description: 'lorem ipsum',
         price: '15,50'
     },
     {
         id: 3,
-        image: product_image,
+        image: shampoo,
         name: 'Shampoo',
         description: 'lorem ipsum',
         price: '29,99'

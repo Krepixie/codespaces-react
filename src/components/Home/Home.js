@@ -3,7 +3,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import Search from "../Search/Search";
 import styled from "styled-components";
 import { products } from "../Search/dados";
-
+import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
 const HomeStyle = styled.section`
   display: flex;
@@ -13,9 +13,12 @@ const HomeStyle = styled.section`
   #main {
     background-color: var(--blue);
     width: 100%;
-    padding: 10rem 5rem;
+    padding-bottom: 10rem;
   }
 
+  ul {
+    list-style-type: none;
+  }
   #dog {
     height: 30rem;
   }
@@ -24,16 +27,12 @@ const HomeStyle = styled.section`
 export default function Home() {
   return (
     <HomeStyle>
-      <Sidebar>
-        <Search />
-      </Sidebar>
+      <Sidebar></Sidebar>
 
       <main id="main">
-        <ul>
-          {products.map((product) => (
-            <ProductCard></ProductCard>
-          ))}
-        </ul>
+        <ImageCarousel />
+
+        <Search />
       </main>
     </HomeStyle>
   );

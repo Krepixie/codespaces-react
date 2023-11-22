@@ -1,55 +1,28 @@
 import styled from "styled-components";
-import dogfood from "../../images/dogfood.png";
-import { products } from "../Search/dados";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import cart from "../../images/cart.svg"
 
-const ProductStyle = styled.li`
-  background-color: var(--white);
-  height: 20rem;
-  width: 15rem;
+const ProductStyle = styled(Card)`
   box-shadow: var(--shadow);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  img {
-    height: 7rem;
-    align-self: center;
-  }
 `;
 
-const ProductInfo = styled.div`
-  h5 {
-    font-size: 20px;
-    color: var(--dark-gray);
-  }
-
-  .product-description {
-    font-size: 14px;
-    color: var(--light-gray);
-  }
-
-  .product-price {
-  }
-`;
-
-const ProductImage = styled.div``;
-
-export default function ProductCard() {
+export default function ProductCard({ name, description, price, image }) {
   return (
-    <>
-      {products.map((product) => (
-        <ProductStyle>
-          <ProductImage>
-            <img className="product-image" alt="Product" src={dogfood}></img>
-          </ProductImage>
-          <ProductInfo>
-            <h5>{product.name}</h5>
-            <p className="product-description">{product.description}</p>
-            <p className="product-price">R${product.price}</p>
-          </ProductInfo>
-        </ProductStyle>
-      ))}
-    </>
+    <li>
+      <ProductStyle style={{ width: "18rem" }}>
+        <Card.Img variant="top" src={image} />
+
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            <p className="product-description">{description}</p>
+            <h3 className="product-price">R${price}</h3>
+          </Card.Text>
+
+          <Button variant="primary">Adicionar ao Carrinho</Button>
+        </Card.Body>
+      </ProductStyle>
+    </li>
   );
 }

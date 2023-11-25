@@ -1,24 +1,22 @@
-import login from "../../images/login.svg";
+import { Button } from "@mui/material";
 import styled from "styled-components";
+import { Login } from "@mui/icons-material";
 
 const listaMenu = ["Início", "Produtos", "Contato"];
 
 const MenuListStyle = styled.ul`
   display: flex;
   list-style-type: none;
-  width: 30%;
-  height: 100%;
+
   gap: 5px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   .menu-items {
     color: var(--white);
-    font: 20px bold;
-    text-transform: uppercase;
+
     cursor: pointer;
     transition: 0.5s;
-    padding: 2rem 1rem;
     border-radius: 20px;
   }
 
@@ -31,21 +29,10 @@ const MenuButtonsStyle = styled.div`
   display: flex;
   gap: 10px;
 
-  input {
-    background-image: url("../../images/search.svg");
-    background-repeat: no-repeat;
-    background-size: 1rem;
+  Button {
+    text-transform: capitalize;
   }
-
-  button {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    font: 18px bold;
-    cursor: pointer;
-  }
-
-  #login {
+  #signup {
     background-color: var(--white);
   }
 `;
@@ -55,12 +42,18 @@ export default function Menu() {
     <>
       <MenuListStyle>
         {listaMenu.map((item) => (
-          <li className="menu-items">{item}</li>
+          <Button variant="text" className="menu-items">
+            {item}
+          </Button>
         ))}
       </MenuListStyle>
       <MenuButtonsStyle>
-        <button id="login">Entrar</button>
-        <button id="signup">Crie sua conta</button>
+        <Button variant="contained" size="small" id="login">
+          Entrar
+        </Button>
+        <Button variant="outlined" size="small" id="signup">
+          Registrar
+        </Button>
       </MenuButtonsStyle>
     </>
   );

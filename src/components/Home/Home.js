@@ -14,14 +14,15 @@ const HomeStyle = styled.section`
     background-color: var(--blue);
     width: 100%;
     padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   ul {
     list-style-type: none;
   }
-  #dog {
-    height: 30rem;
-  }
+
 `;
 
 export default function Home() {

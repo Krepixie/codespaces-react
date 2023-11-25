@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import cart from "../../images/cart.svg"
 
 const ProductStyle = styled(Card)`
   box-shadow: var(--shadow);

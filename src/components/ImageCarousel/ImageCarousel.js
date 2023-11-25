@@ -27,23 +27,28 @@ export default function ImageCarousel() {
       <Carousel.Item className="item">
         <img src={slide1} alt="" className="d-block w-100"></img>
         <Carousel.Caption className="caption">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Guia do cuidado pet</h3>
+          <p>
+            Dicas essenciais para criar laços fortes e duradouros com seu pet.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="item">
         <img src={slide2} alt="" className="d-block w-100"></img>
         <Carousel.Caption className="caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Mimos para pets felizes</h3>
+          <p>
+            Encontre tudo o que seu pet precisa para uma vida saudável e feliz!
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="item">
         <img src={slide3} alt="" className="d-block w-100"></img>
         <Carousel.Caption className="caption">
-          <h3>Third slide label</h3>
+          <h3>Brinquedos divertidos para animais felizes</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Explore nossa seleção de brinquedos para entreter seu bichinho de
+            estimação!
           </p>
         </Carousel.Caption>
       </Carousel.Item>

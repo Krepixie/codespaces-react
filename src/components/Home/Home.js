@@ -2,7 +2,6 @@ import Sidebar from "../Sidebar/Sidebar";
 import ProductCard from "../ProductCard/ProductCard";
 import Search from "../Search/Search";
 import styled from "styled-components";
-import { products } from "../Search/dados";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
 
 const HomeStyle = styled.section`

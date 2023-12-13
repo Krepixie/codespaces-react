@@ -1,0 +1,8 @@
+[
+    {"id": "1", "name": "Ração", "image": "", "description": "lorem ipsum", "price": "32,90" },
+    {"id": "2", "name": "Coleira", "image": "", "description": "lorem ipsum", "price": "15,50" },
+    {"id": "3", "name": "Shampoo", "image": "", "description": "lorem ipsum", "price": "29,99" },
+    {"id": "4", "name": "Brinquedo", "image": "", "description": "lorem ipsum", "price": "8,98" },
+    {"id": "5", "name": "Caminha", "image": "", "description": "lorem ipsum", "price": "72,90" },
+    {"id": "6", "name": "Cone", "image": "", "description": "lorem ipsum", "price": "8,55" }
+]

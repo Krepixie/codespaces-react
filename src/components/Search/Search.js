@@ -18,7 +18,7 @@ const InputStyle = styled.input`
   padding: 0.7rem 5rem 0.7rem 3rem;
 `;
 export default function Search() {
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  // const [filteredProducts, setFilteredProducts] = useState([]);
 
   return (
     <SearchStyle>

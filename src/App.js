@@ -1,6 +1,6 @@
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
+import Header from "./frontend/components/Header/Header";
+import Home from "./frontend/components/Home/Home";
+import Footer from "./frontend/components/Footer/Footer";
 import "./App.css";
 
 export default function App() {

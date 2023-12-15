@@ -1,8 +1,8 @@
 import Sidebar from "../Sidebar/Sidebar";
-import ProductCard from "../ProductCard/ProductCard";
 import Search from "../Search/Search";
 import styled from "styled-components";
 import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import Game from "../Game/Game";
 
 const HomeStyle = styled.section`
   display: flex;
@@ -32,7 +32,7 @@ export default function Home() {
       <main id="main">
         <ImageCarousel />
 
-        <Search />
+        <Game></Game>
       </main>
     </HomeStyle>
   );
